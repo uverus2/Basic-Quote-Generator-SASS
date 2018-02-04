@@ -1,0 +1,31 @@
+@import url(https://fonts.googleapis.com/css?family=Volkhov:700);
+
+* {
+  box-sizing: border-box;
+}
+h2 {
+  font-family: 'Volkhov', serif;
+  font-weight: 700;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0;
+  text-align: center;
+  position: relative;
+  
+  &:after, &:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: rotate(45deg);
+    background: #ccc;
+    width: 8px;
+    height: 8px;
+    border: 10px solid #fff;
+  }
+  &:before {
+    top: -15px;
+  }
+  &:after {
+    bottom: -15px;
+  }
+}
