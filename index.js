@@ -11,7 +11,7 @@ var quotes = [ //array containing the quotes
 
 function newQuote() {
 
-    var t = setTimeout(newQuote, 5000); //change every 5 seconds 
     var randomNumber = Math.floor(Math.random() * (quotes.length)); // random quote 
     document.getElementById('display').innerHTML = quotes[randomNumber]; //insert it in element display
+    setTimeout(newQuote, 5000); //change every 5 seconds 
 }
